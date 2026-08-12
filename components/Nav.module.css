@@ -39,27 +39,31 @@
   }
   .links.open{
     display:flex;flex-direction:column;position:absolute;top:72px;left:0;right:0;
-    background:var(--sand);padding:20px 24px 28px;gap:2px;
-    border-bottom:1px solid rgba(22,73,59,0.1);
-    box-shadow:0 12px 24px rgba(15,51,42,0.12);
+    background:#fff;padding:18px 24px 30px;gap:0;align-items:stretch;
+    border-bottom:1px solid rgba(22,73,59,0.12);
+    box-shadow:0 24px 40px rgba(15,51,42,0.16);
     max-height:calc(100vh - 72px);overflow-y:auto;
   }
-  .links.open a{padding:11px 0;font-size:16px;}
-  .links.open li{border-bottom:1px solid rgba(22,73,59,0.06);}
-  .links.open li:last-child{border-bottom:none;}
-  .dropdown{position:static;transform:none;box-shadow:none;border:none;display:block;padding:0 0 8px 18px;}
-  .dropdown a{padding:9px 0;font-size:15px;color:var(--ink-soft);}
+  .links.open > li:not(.mobileDonate){border-bottom:1px solid rgba(22,73,59,0.07);}
+  .links.open > li:last-child{border-bottom:none;}
+  .links.open > li:not(.mobileDonate) > a{display:block;padding:15px 4px;font-size:16.5px;font-weight:600;color:var(--ink);}
+  .links.open a:hover{color:var(--green-deep);}
+  .dropdown{position:static;transform:none;box-shadow:none;border:none;display:block;padding:4px 0 12px 16px;border-left:2px solid rgba(224,162,59,0.4);margin-left:4px;border-top:none;}
+  .dropdown a{display:block;padding:11px 8px;font-size:15px;color:var(--ink-soft);font-weight:500;}
   .dropdownWrap{border-bottom:none !important;}
   .mobileDonate{display:block;}
-  .mobileDonate .btn-donate{display:block;text-align:center;margin-top:14px;padding:14px 0;}
+  .mobileDonate :global(.btn-donate){
+    display:block;text-align:center;margin-top:22px;padding:16px 0;font-size:16px;font-weight:700;color:#fff;width:100%;
+  }
+  .mobileDonate :global(.btn-donate):hover{color:#fff;background:#9e4f26;}
   .mobileToggle{display:block;}
 }
 
 @media(max-width:560px){
   .inner{height:64px;padding:0 20px;}
   .logoMark{height:44px;}
-  .links.open{top:64px;max-height:calc(100vh - 64px);padding:16px 20px 24px;}
-  .links.open a{padding:10px 0;font-size:15.5px;}
+  .links.open{top:64px;max-height:calc(100vh - 64px);padding:14px 20px 26px;}
+  .links.open > li:not(.mobileDonate) > a{padding:14px 4px;font-size:16px;}
   .actions{gap:0;}
   .actions > a{display:none;}
   .mobileToggle span{width:20px;margin:4px 0;}
