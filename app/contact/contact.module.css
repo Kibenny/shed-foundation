@@ -1,0 +1,52 @@
+.intro{padding:80px 0 10px;}
+.introInner{max-width:680px;}
+.introInner h2{font-size:30px;line-height:1.25;color:var(--green-darker);margin:0 0 18px;font-weight:600;}
+.introInner p{font-size:15.5px;line-height:1.8;color:var(--ink-soft);margin:0;}
+
+.section{padding:56px 0 90px;}
+.layout{display:grid;grid-template-columns:1.2fr 0.8fr;gap:26px;align-items:start;}
+
+.roleCards{display:grid;gap:22px;}
+.roleCard{
+  background:#fff;border-radius:8px;padding:30px 32px;border:1px solid rgba(22,73,59,0.08);
+}
+.roleCard .tag{
+  display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:1px;text-transform:uppercase;
+  color:var(--clay);margin-bottom:12px;
+}
+.roleCard h3{font-size:18px;color:var(--green-darker);margin:0 0 6px;font-weight:600;}
+.roleCard .person{font-size:14px;color:var(--ink-soft);margin:0 0 14px;}
+.roleCard p{font-size:14px;line-height:1.7;color:var(--ink-soft);margin:0 0 16px;}
+.roleCard a{color:var(--green-deep);font-weight:700;font-size:14px;text-decoration:none;}
+
+.infoCard{
+  background:var(--green-darker);border-radius:8px;padding:36px 32px;color:#fff;
+}
+.infoCard h3{color:#fff;font-size:18px;margin:0 0 22px;font-weight:600;}
+.infoRow{display:flex;gap:14px;margin-bottom:20px;align-items:flex-start;}
+.infoRow:last-child{margin-bottom:0;}
+.infoIcon{
+  width:34px;height:34px;border-radius:50%;background:rgba(224,162,59,0.16);color:var(--gold);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.infoRow .label{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,0.55);margin-bottom:4px;}
+.infoRow .value{font-size:14.5px;line-height:1.6;color:rgba(255,255,255,0.92);}
+.infoRow a{color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.35);}
+.infoRow a:hover{border-color:var(--gold);}
+
+.mapLink{
+  display:inline-flex;align-items:center;gap:8px;margin-top:26px;padding-top:22px;
+  border-top:1px solid rgba(255,255,255,0.15);color:var(--gold);font-weight:700;font-size:13.5px;
+  text-decoration:none;
+}
+
+@media(max-width:860px){
+  .layout{grid-template-columns:1fr;}
+}
+
+@media(max-width:560px){
+  .intro{padding:56px 0 10px;}
+  .section{padding:40px 0 64px;}
+  .roleCard{padding:26px 22px;}
+  .infoCard{padding:30px 24px;}
+}

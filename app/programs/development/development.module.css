@@ -1,0 +1,37 @@
+.intro{padding:80px 0 20px;}
+.introGrid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:56px;align-items:start;}
+.introGrid h2{font-size:30px;line-height:1.25;color:var(--green-darker);margin:0 0 20px;font-weight:600;}
+.introGrid p{font-size:15.5px;line-height:1.75;color:var(--ink-soft);margin:0 0 16px;}
+.introFigure img{width:100%;height:420px;object-fit:cover;border-radius:6px;}
+
+.issues{padding:90px 0 20px;}
+.sectionHead{max-width:680px;margin-bottom:44px;}
+.sectionHead h2{font-size:32px;color:var(--green-darker);margin:0;font-weight:600;}
+.issueGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;}
+.issueCard{background:#fff;border-radius:6px;padding:28px 24px;border:1px solid rgba(22,73,59,0.08);text-align:center;}
+.issueIcon{
+  width:44px;height:44px;border-radius:50%;background:var(--sand-warm);
+  display:flex;align-items:center;justify-content:center;margin:0 auto 16px;
+  color:var(--green-deep);font-size:19px;
+}
+.issueCard h3{font-size:16px;color:var(--green-darker);margin:0;font-weight:600;}
+
+.feature{padding:90px 0;background:#fff;}
+.featureGrid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:56px;align-items:center;}
+.featureGrid img{width:100%;height:420px;object-fit:cover;border-radius:6px;}
+.featureGrid h2{font-size:28px;color:var(--green-darker);margin:0 0 16px;font-weight:600;}
+.featureGrid p{font-size:15.5px;line-height:1.75;color:var(--ink-soft);margin:0 0 14px;}
+
+.partnerNote{padding:70px 0;}
+.partnerBox{
+  background:var(--sand-warm);border-radius:6px;padding:40px;display:flex;justify-content:space-between;
+  align-items:center;flex-wrap:wrap;gap:20px;
+}
+.partnerBox p{margin:0;font-size:15px;color:var(--ink-soft);max-width:560px;line-height:1.65;}
+.partnerBox a{color:var(--green-deep);font-weight:700;font-size:14px;text-decoration:none;white-space:nowrap;}
+
+@media(max-width:860px){
+  .introGrid,.featureGrid{grid-template-columns:1fr;}
+  .introFigure img,.featureGrid img{height:280px;}
+  .issueGrid{grid-template-columns:repeat(2,1fr);}
+}

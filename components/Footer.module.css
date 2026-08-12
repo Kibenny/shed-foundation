@@ -1,0 +1,29 @@
+.footer{background:var(--green-darker);padding:60px 0 30px;}
+.grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;margin-bottom:44px;}
+.brandRow{display:flex;align-items:center;gap:12px;margin-bottom:10px;flex-wrap:nowrap;min-width:0;}
+.footerLogoImg{width:56px;height:auto;display:block;flex-shrink:0;aspect-ratio:1536/1024;object-fit:contain;}
+.footerBrand{font-family:'Source Serif 4',serif;color:#fff;font-size:19px;font-weight:600;}
+.footerFullName{color:var(--gold);font-size:13px;font-weight:600;letter-spacing:0.3px;margin:0 0 14px;}
+.footer p{color:rgba(255,255,255,0.55);font-size:13.5px;line-height:1.7;}
+.footer h4{color:#fff;font-size:13px;letter-spacing:1px;text-transform:uppercase;margin:0 0 16px;opacity:0.8;}
+.footer ul{list-style:none;padding:0;margin:0;}
+.footer li{margin-bottom:10px;}
+.footer a{color:rgba(255,255,255,0.65);text-decoration:none;font-size:14px;}
+.footer a:hover{color:#fff;}
+.bottom{border-top:1px solid rgba(255,255,255,0.12);padding-top:24px;color:rgba(255,255,255,0.45);font-size:12.5px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+
+@media(max-width:860px){
+  .grid{grid-template-columns:1fr 1fr;}
+}
+
+@media(max-width:560px){
+  .footer{padding:48px 0 24px;}
+  .grid{grid-template-columns:1fr 1fr;gap:26px;margin-bottom:36px;}
+  .footer .grid > div:first-child{grid-column:1 / -1;}
+  .brandRow{flex-wrap:wrap;}
+  .footerFullName{font-size:12px;}
+}
+
+@media(max-width:380px){
+  .grid{grid-template-columns:1fr;}
+}
