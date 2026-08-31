@@ -26,6 +26,7 @@
 .boardCard .role{color:var(--clay);font-size:12.5px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:10px;}
 .boardCard h3{font-size:19px;color:var(--green-darker);margin:0 0 10px;font-weight:600;}
 .boardCard p{font-size:14px;line-height:1.65;color:var(--ink-soft);margin:0;}
+.boardPhoto{width:96px;height:96px;border-radius:50%;object-fit:cover;border:3px solid #e7eae0;display:block;margin-bottom:16px;}
 
 .foundersRow{
   margin-top:44px;padding-top:36px;border-top:1px solid rgba(22,73,59,0.1);

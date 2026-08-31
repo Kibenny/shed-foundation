@@ -6,7 +6,7 @@ import styles from './home.module.css';
 export const metadata: Metadata = {
   title: 'SHED Foundation — Health, Education & Development in Shirati, Tanzania',
   description:
-    'Since 2006, SHED Foundation has delivered primary healthcare, education grants and community development to underserved villages in Shirati and the Rorya District, Tanzania.',
+    'SHED Foundation (Shirati Health, Education and Development Foundation) is a Tanzanian nonprofit working in close partnership with Village Life Outreach Project and Roche Health Center.',
   openGraph: {
     url: 'https://www.shedfoundation.org/',
   },
@@ -22,15 +22,16 @@ export default function HomePage() {
         />
         <div className={styles.heroContent}>
           <div className="eyebrow">Shirati &middot; Rorya District &middot; Lake Victoria, Tanzania</div>
-          <h1>Health, education and development for the villages of Lake Victoria.</h1>
+          <h1>Health, education and development in northern Tanzania.</h1>
           <p>
-            Since 2006, SHED Foundation has delivered primary healthcare,
-            education grants and community development to underserved
-            villages in Shirati and beyond.
+            SHED Foundation (Shirati Health, Education and Development Foundation) is a Tanzanian nonprofit
+            working in close partnership with Village Life Outreach Project and Roche Health Center.
           </p>
           <div className={styles.heroCtas}>
-            <Link href="/donate" className="btn-primary">Support Our Mission</Link>
-            <Link href="/impact" className="btn-secondary">See Our Work</Link>
+            <Link href="/about" className="btn-primary">About Us</Link>
+            <a href="https://villagelifeoutreachproject.org/" target="_blank" rel="noopener noreferrer" className="btn-secondary">
+              Village Life Outreach Project
+            </a>
           </div>
         </div>
       </section>
@@ -41,16 +42,15 @@ export default function HomePage() {
         <div className="wrap">
           <div className={styles.missionHead}>
             <div className="kicker">Our Mission</div>
-            <h2>Three pillars, one village-based approach.</h2>
+            <h2>Three pillars, one partnership with Village Life Outreach Project.</h2>
           </div>
           <div className={styles.pillars}>
             <div className={styles.pillar}>
               <div className={styles.pillarIcon}>&#10084;</div>
               <h3>Health</h3>
               <p>
-                A village-based primary care facility providing preventive
-                and curative care, maternal services, HIV/TB diagnosis, and
-                ultrasound imaging for pregnancy and abdominal disorders.
+                SHED Foundation works in partnership with Village Life Outreach Project and Roche Health Center
+                to improve access to quality health care in rural northern Tanzania.
               </p>
               <Link href="/programs/health">Learn about Health &rarr;</Link>
             </div>
@@ -58,9 +58,8 @@ export default function HomePage() {
               <div className={styles.pillarIcon}>&#127891;</div>
               <h3>Education</h3>
               <p>
-                Education grants for health workers, secondary school
-                assistance, and our Global Health Education Partnership
-                Program connecting students worldwide.
+                SHED works with Village Life Outreach Project to support education and opportunities for
+                children and communities in rural northern Tanzania.
               </p>
               <Link href="/programs/education">Learn about Education &rarr;</Link>
             </div>
@@ -68,9 +67,8 @@ export default function HomePage() {
               <div className={styles.pillarIcon}>&#127793;</div>
               <h3>Development</h3>
               <p>
-                Community development delivered with our partner, Village
-                Life Outreach Project — addressing water, sanitation and
-                malaria prevention village by village.
+                SHED partners with Village Life Outreach Project and local communities to support sustainable
+                development, with a focus on clean water, health, education, and nutrition.
               </p>
               <Link href="/programs/development">Learn about Development &rarr;</Link>
             </div>
@@ -81,18 +79,17 @@ export default function HomePage() {
       <section className={styles.impact}>
         <div className="wrap">
           <div className={styles.impactTop}>
-            <h2>Two decades of measurable change in the Rorya District.</h2>
+            <h2>Two decades of partnership in the Rorya District.</h2>
             <p>
-              Since our founding in 2006, our work has reached families
-              across Shirati, Sota Village and the surrounding communities
-              of Lake Victoria.
+              SHED was registered in January 2006 and granted NGO status in March 2006, with a mandate to work
+              in health, education, and development in northern Tanzania.
             </p>
           </div>
           <div className={styles.stats}>
-            <div className={styles.stat}><div className={styles.num}>20<span>+</span></div><div className={styles.label}>Years serving the Shirati community</div></div>
-            <div className={styles.stat}><div className={styles.num}>10<span>,000+</span></div><div className={styles.label}>Patients treated annually</div></div>
-            <div className={styles.stat}><div className={styles.num}>150<span>+</span></div><div className={styles.label}>Villages reached through partner programs</div></div>
-            <div className={styles.stat}><div className={styles.num}>7<span></span></div><div className={styles.label}>Founding board members and counting</div></div>
+            <div className={styles.stat}><div className={styles.num}>2006</div><div className={styles.label}>Official registration and NGO status</div></div>
+            <div className={styles.stat}><div className={styles.num}>3</div><div className={styles.label}>Program areas: health, education, development</div></div>
+            <div className={styles.stat}><div className={styles.num}>1</div><div className={styles.label}>Local mission centered in Shirati</div></div>
+            <div className={styles.stat}><div className={styles.num}>1</div><div className={styles.label}>Principal partner: Village Life Outreach Project</div></div>
           </div>
         </div>
       </section>
@@ -104,18 +101,16 @@ export default function HomePage() {
               src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1200&auto=format&fit=crop"
               alt="Community health worker"
             />
-            <p className="photo-note">Photo placeholder — replace with an original SHED Foundation clinical photo.</p>
           </div>
           <div>
-            <div className="kicker">From the Field</div>
+            <div className="kicker">In Partnership</div>
             <p className={styles.storyQuote}>
-              &ldquo;Our clinic in Sota Village means a mother no longer has
-              to walk three hours to reach safe care. That&rsquo;s the
-              difference SHED makes, one family at a time.&rdquo;
+              &ldquo;Together with Village Life Outreach Project and local communities, SHED Foundation supports
+              health, education, and sustainable community development for the people of the Shirati region.&rdquo;
             </p>
             <div className={styles.storyAttr}>
-              Dr. Esther Kawira
-              <span>Medical Director &amp; Founding Member, SHED Foundation</span>
+              SHED Foundation &amp; Village Life Outreach Project
+              <span>Working together in northern Tanzania</span>
             </div>
           </div>
         </div>
@@ -129,48 +124,41 @@ export default function HomePage() {
           </div>
           <div className={styles.programsGrid}>
             <Link href="/programs/health" className={styles.programCard}>
-              <img
-                src="https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=800&auto=format&fit=crop"
-                alt="Health program"
-              />
-              <div className={styles.programLabel}><div className="tag">Health</div><h3>Primary Care &amp; Maternal Health</h3></div>
+              <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=800&auto=format&fit=crop" alt="Health program" />
+              <div className={styles.programLabel}><div className="tag">Health</div><h3>Roche Health Center &amp; Community Care</h3></div>
             </Link>
             <Link href="/programs/education" className={styles.programCard}>
-              <img
-                src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=800&auto=format&fit=crop"
-                alt="Education program"
-              />
-              <div className={styles.programLabel}><div className="tag">Education</div><h3>Grants &amp; School Support</h3></div>
+              <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=800&auto=format&fit=crop" alt="Education program" />
+              <div className={styles.programLabel}><div className="tag">Education</div><h3>Children, Schools &amp; Community Learning</h3></div>
             </Link>
             <Link href="/programs/development" className={styles.programCard}>
-              <img
-                src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop"
-                alt="Development program"
-              />
-              <div className={styles.programLabel}><div className="tag">Development</div><h3>Water, Sanitation &amp; Community</h3></div>
+              <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop" alt="Development program" />
+              <div className={styles.programLabel}><div className="tag">Development</div><h3>Water, Nutrition &amp; Community</h3></div>
             </Link>
           </div>
         </div>
       </section>
 
-      <section className={styles.partners}>
+      <section style={{ padding: '60px 0', background: '#fff' }}>
         <div className="wrap">
-          <div className="kicker">Friends &amp; Partners</div>
-          <div className={styles.partnerRow}>
-            <div>Village Life Outreach Project</div>
-            <div>Direct Relief</div>
-            <div>Shirati KMT Hospital</div>
-            <div>Burkitt&rsquo;s Lymphoma Fund for Africa</div>
-            <div>Goshen College</div>
-          </div>
+          <div className="kicker">Our History</div>
+          <h2 style={{ fontSize: '30px', color: 'var(--green-darker)', margin: '0 0 16px', fontWeight: 600 }}>Registered in January 2006, granted NGO status in March 2006.</h2>
+          <p style={{ maxWidth: 720, color: 'var(--ink-soft)', lineHeight: 1.7, marginBottom: '1.5rem' }}>
+            SHED Foundation began in Shirati, Rorya District, with a mandate to work in health, education, and
+            development in northern Tanzania. Many of the programs described on earlier pages of this site are
+            part of SHED&apos;s history, not its current activities.
+          </p>
+          <Link href="/history" className="btn-primary">Read our full history &rarr;</Link>
         </div>
       </section>
 
       <section className="donate-band">
         <div className="wrap">
-          <h2>Your gift reaches Shirati directly.</h2>
-          <p>Every contribution supports village-based health, education and development programs.</p>
-          <Link href="/donate" className="btn-primary">Donate Now</Link>
+          <h2>Partner with us.</h2>
+          <p>SHED Foundation works in close partnership with Village Life Outreach Project and the communities of Shirati.</p>
+          <a href="https://villagelifeoutreachproject.org/" target="_blank" rel="noopener noreferrer" className="btn-primary">
+            Visit Village Life Outreach Project
+          </a>
         </div>
       </section>
     </>

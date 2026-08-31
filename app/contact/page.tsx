@@ -5,8 +5,7 @@ import styles from './contact.module.css';
 
 export const metadata: Metadata = {
   title: 'Contact — SHED Foundation',
-  description:
-    'Get in touch with SHED Foundation in Shirati, Tanzania, for partnership inquiries, general questions, or donation questions.',
+  description: 'Get in touch with SHED Foundation in Shirati, Tanzania.',
   openGraph: {
     title: 'Contact | SHED Foundation',
     description: 'Reach SHED Foundation in Shirati, Rorya District, Mara, Tanzania.',
@@ -26,10 +25,7 @@ export default function ContactPage() {
         <div className="page-hero-content">
           <div className="eyebrow">Contact</div>
           <h1>Reach the team in Shirati.</h1>
-          <p>
-            Whether you&rsquo;re a medical school exploring a partnership or
-            just have a question, here&rsquo;s the right person to reach.
-          </p>
+          <p>Whether you&rsquo;re a partner or just have a question, here&rsquo;s how to reach us.</p>
         </div>
       </section>
 
@@ -39,12 +35,8 @@ export default function ContactPage() {
         <div className="wrap">
           <div className={styles.introInner}>
             <div className="kicker">Get In Touch</div>
-            <h2>Two people, one small office in Shirati.</h2>
-            <p>
-              SHED Foundation runs lean &mdash; enquiries are split between
-              the Medical Director for clinical partnerships and the Deputy
-              Executive Director for everything else.
-            </p>
+            <h2>Contact SHED Foundation.</h2>
+            <p>For partnership inquiries, general questions, or donation questions, use the contacts below.</p>
           </div>
         </div>
       </section>
@@ -53,37 +45,29 @@ export default function ContactPage() {
         <div className="wrap">
           <div className={styles.layout}>
             <div className={styles.roleCards}>
-              <div className={styles.roleCard}>
-                <div className={styles.tag}>
-                  Medical &amp; Research Partnerships
+              <div className={styles.roleCard} style={{ display: 'flex', gap: '20px', alignItems: 'flex-start' }}>
+                <img src="/images/nyamusi-magatti.png" alt="Mr. Nyamusi Magatti" style={{ width: 96, height: 96, borderRadius: '50%', objectFit: 'cover', flexShrink: 0, border: '3px solid #e7eae0' }} />
+                <div>
+                  <div className={styles.tag}>General Enquiries</div>
+                  <h3>Mr. Nyamusi Magatti</h3>
+                  <p className={styles.person}>Deputy Executive Director, SHED Foundation</p>
+                  <p>SHED Foundation, Utegi Road, P.O. Box 39, Shirati, Rorya District, Mara, Tanzania</p>
+                  <a href="mailto:shedftanzania@gmail.com">shedftanzania@gmail.com</a>
                 </div>
-                <h3>Dr. Esther L. Kawira, MD</h3>
-                <p className={styles.person}>Medical Director, SHED Foundation</p>
-                <p>
-                  For medical schools and health professionals interested in
-                  establishing a partnership relationship with Sota Health
-                  Clinic.
-                </p>
-                <a href="mailto:shedftanzania@gmail.com">shedftanzania@gmail.com</a>
               </div>
 
               <div className={styles.roleCard}>
-                <div className={styles.tag}>
-                  General Enquiries
-                </div>
-                <h3>Mr. Nyamusi Magatti</h3>
-                <p className={styles.person}>Deputy Executive Director, SHED Foundation</p>
-                <p>
-                  For all other questions &mdash; donations, volunteering,
-                  media, or anything else not covered above.
-                </p>
-                <a href="mailto:shedftanzania@gmail.com">shedftanzania@gmail.com</a>
+                <div className={styles.tag}>Partnerships</div>
+                <h3>Village Life Outreach Project</h3>
+                <p>SHED Foundation&apos;s principal current partner.</p>
+                <a href="https://villagelifeoutreachproject.org/" target="_blank" rel="noopener noreferrer">
+                  villagelifeoutreachproject.org &rarr;
+                </a>
               </div>
             </div>
 
             <div className={styles.infoCard}>
               <h3>SHED Foundation</h3>
-
               <div className={styles.infoRow}>
                 <div className={styles.infoIcon}>
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -93,13 +77,9 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <div className={styles.label}>Address</div>
-                  <div className={styles.value}>
-                    Utegi Road, P.O. Box 39<br />
-                    Shirati, Rorya District, Mara, Tanzania
-                  </div>
+                  <div className={styles.value}>Utegi Road, P.O. Box 39<br />Shirati, Rorya District, Mara, Tanzania</div>
                 </div>
               </div>
-
               <div className={styles.infoRow}>
                 <div className={styles.infoIcon}>
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -109,12 +89,9 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <div className={styles.label}>Email</div>
-                  <div className={styles.value}>
-                    <a href="mailto:shedftanzania@gmail.com">shedftanzania@gmail.com</a>
-                  </div>
+                  <div className={styles.value}><a href="mailto:shedftanzania@gmail.com">shedftanzania@gmail.com</a></div>
                 </div>
               </div>
-
               <div className={styles.infoRow}>
                 <div className={styles.infoIcon}>
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -123,35 +100,10 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <div className={styles.label}>Phone (Tanzania)</div>
-                  <div className={styles.value}>
-                    <a href="tel:+255621045742">+255 621 045742</a>
-                  </div>
+                  <div className={styles.value}><a href="tel:+255621045742">+255 621 045742</a></div>
                 </div>
               </div>
-
-              <div className={styles.infoRow}>
-                <div className={styles.infoIcon}>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" strokeWidth="1.6"/>
-                    <path d="M3 9h18" stroke="currentColor" strokeWidth="1.6"/>
-                  </svg>
-                </div>
-                <div>
-                  <div className={styles.label}>US Branch (Donations)</div>
-                  <div className={styles.value}>
-                    2131 Curtis Drive<br />Penngrove, CA 94951, USA
-                  </div>
-                </div>
-              </div>
-
-              <a
-                className={styles.mapLink}
-                href="https://www.google.com/maps/search/?api=1&query=SHED%20Foundation%20Utegi%20Road%20Shirati%20Tanzania"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Get Directions &rarr;
-              </a>
+              <a className={styles.mapLink} href="https://www.google.com/maps/search/?api=1&query=SHED%20Foundation%20Utegi%20Road%20Shirati%20Tanzania" target="_blank" rel="noopener noreferrer">Get Directions &rarr;</a>
             </div>
           </div>
         </div>

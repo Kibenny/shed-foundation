@@ -24,6 +24,7 @@ export default function Footer() {
               <li><Link href="/programs/health">Health</Link></li>
               <li><Link href="/programs/education">Education</Link></li>
               <li><Link href="/programs/development">Development</Link></li>
+              <li><Link href="/history">History</Link></li>
               <li><Link href="/impact">Impact</Link></li>
             </ul>
           </div>
@@ -31,9 +32,8 @@ export default function Footer() {
             <h4>Get Involved</h4>
             <ul>
               <li><Link href="/donate">Donate</Link></li>
-              <li><Link href="/partners">Partner With Us</Link></li>
-              <li><Link href="/gallery">Gallery</Link></li>
-              <li><Link href="/news">News</Link></li>
+              <li><a href="https://villagelifeoutreachproject.org/" target="_blank" rel="noopener noreferrer">Village Life Outreach Project</a></li>
+              <li><Link href="/contact">Partner With Us</Link></li>
             </ul>
           </div>
           <div>

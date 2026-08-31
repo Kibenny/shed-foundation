@@ -33,11 +33,13 @@ export default function Nav() {
               <Link href="/programs/development" onClick={() => setOpen(false)}>Development</Link>
             </div>
           </li>
-          <li><Link href="/impact" onClick={() => setOpen(false)}>Impact</Link></li>
-          <li><Link href="/gallery" onClick={() => setOpen(false)}>Gallery</Link></li>
-          <li><Link href="/news" onClick={() => setOpen(false)}>News</Link></li>
-          <li><Link href="/partners" onClick={() => setOpen(false)}>Partners</Link></li>
+          <li><Link href="/history" onClick={() => setOpen(false)}>History</Link></li>
           <li><Link href="/contact" onClick={() => setOpen(false)}>Contact</Link></li>
+          <li>
+            <a href="https://villagelifeoutreachproject.org/" target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>
+              Village Life
+            </a>
+          </li>
           <li className={styles.mobileDonate}>
             <Link href="/donate" className="btn-donate" onClick={() => setOpen(false)}>Donate</Link>
           </li>
