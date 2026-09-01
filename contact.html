@@ -34,7 +34,7 @@
 
     <main id="main">
       <section class="page-hero">
-        <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1600&auto=format&fit=crop" alt="People talking in an office setting" />
+        <img src="images/shed-old-site/db1ec76a-5436-4575-921b-faa6c6e3fc79.jpg" alt="People talking in an office setting" />
         <div class="hero-content wrap">
           <div class="eyebrow">Contact</div>
           <h1>Reach SHED Foundation directly in Shirati.</h1>
@@ -69,20 +69,20 @@
             <h2>Use the form below for partnership, donation, or general inquiries.</h2>
           </div>
           <div class="form-shell">
-            <form class="contact-form">
+            <form class="contact-form" action="mailto:shedftanzania@gmail.com" method="post" enctype="text/plain">
               <label>
                 Name
-                <input type="text" placeholder="Your name" />
+                <input type="text" name="name" placeholder="Your name" required />
               </label>
               <label>
                 Email
-                <input type="email" placeholder="you@example.com" />
+                <input type="email" name="email" placeholder="you@example.com" required />
               </label>
               <label>
                 Message
-                <textarea placeholder="How can we help?"></textarea>
+                <textarea name="message" placeholder="How can we help?" required></textarea>
               </label>
-              <button class="btn-primary" type="button">Send message</button>
+              <button class="btn-primary" type="submit">Send message</button>
             </form>
           </div>
         </div>
@@ -92,7 +92,7 @@
     <footer>
       <div class="wrap">
         <div class="footer-grid">
-          <div><div class="footer-logo">SHED Foundation</div><p>Shirati Health, Education and Development Foundation. Registered NGO in Tanzania since March 2006. Utegi Road, P.O. Box 39, Shirati, Tanzania.</p></div>
+          <div><img src="assets/shed-logo.png" alt="SHED Foundation" class="footer-logo-img" /><div class="footer-logo">SHED Foundation</div><p>Shirati Health, Education and Development Foundation. Registered NGO in Tanzania since March 2006. Utegi Road, P.O. Box 39, Shirati, Tanzania.</p></div>
           <div><h4>Explore</h4><ul><li><a href="about.html">About Us</a></li><li><a href="health.html">Health</a></li><li><a href="education.html">Education</a></li><li><a href="development.html">Development</a></li><li><a href="history.html">History</a></li></ul></div>
           <div><h4>Get Involved</h4><ul><li><a href="donate.html">Donate</a></li><li><a href="https://villagelifeoutreachproject.org/" rel="noreferrer">Village Life</a></li><li><a href="index.html">Home</a></li></ul></div>
           <div><h4>Contact</h4><ul><li><a href="mailto:shedftanzania@gmail.com">shedftanzania@gmail.com</a></li><li><a href="https://facebook.com" rel="noreferrer">Facebook</a></li></ul></div>
