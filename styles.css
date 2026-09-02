@@ -987,13 +987,13 @@ footer {
 
 .footer-logo-img {
   display: block;
-  height: 52px;
+  height: 60px;
   width: auto;
-  max-width: 240px;
+  max-width: 280px;
   object-fit: contain;
   margin-bottom: 14px;
   background: #fff;
-  padding: 8px 14px;
+  padding: 6px 12px;
   border-radius: 8px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
 }
@@ -1245,7 +1245,7 @@ footer a {
   }
 
   .footer-logo-img {
-    height: 36px;
+    height: 42px;
   }
 
   .partner-row {
