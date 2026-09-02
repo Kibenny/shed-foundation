@@ -123,6 +123,15 @@ button:focus-visible {
   border-radius: 10px;
   background: #fff;
   padding: 0;
+  cursor: pointer;
+  position: relative;
+  transition: background 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+  box-shadow: 0 2px 8px rgba(22, 73, 59, 0.06);
+}
+
+.nav-toggle:hover {
+  border-color: rgba(22, 73, 59, 0.2);
+  box-shadow: 0 4px 12px rgba(22, 73, 59, 0.1);
 }
 
 .nav-toggle span {
@@ -132,6 +141,21 @@ button:focus-visible {
   margin: 3px auto;
   border-radius: 999px;
   background: var(--green-deep);
+  transition: transform 200ms ease, opacity 200ms ease, width 200ms ease;
+  transform-origin: center;
+}
+
+.site-nav.is-open .nav-toggle span:nth-child(1) {
+  transform: translateY(5px) rotate(45deg);
+}
+
+.site-nav.is-open .nav-toggle span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.site-nav.is-open .nav-toggle span:nth-child(3) {
+  transform: translateY(-5px) rotate(-45deg);
 }
 
 .site-nav ul {
@@ -1021,70 +1045,6 @@ footer a {
 
   .nav-inner {
     position: relative;
-  }
-
-  .nav-toggle {
-    display: inline-block;
-    margin-left: auto;
-  }
-
-  .site-nav ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 20px;
-    right: 20px;
-    flex-direction: column;
-    gap: 18px;
-    padding: 18px 20px;
-    margin-top: 10px;
-    background: rgba(245, 246, 240, 0.98);
-    border: 1px solid rgba(22, 73, 59, 0.12);
-    border-radius: 16px;
-    box-shadow: 0 20px 40px rgba(17, 30, 26, 0.14);
-  }
-
-  .site-nav.is-open ul {
-    display: flex;
-  }
-
-  .btn-donate {
-    display: none;
-  }
-
-  .hero {
-    min-height: 84vh;
-  }
-
-  .hero h1 {
-    font-size: 38px;
-  }
-
-  .pillars,
-  .stats,
-  .programs-grid,
-  .footer-grid,
-  .story-grid,
-  .panel-grid,
-  .three-col,
-  .page-image-grid,
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .story-grid img {
-    height: 300px;
-  }
-
-  .page-hero {
-    min-height: 46vh;
-  }
-
-  .page-hero h1 {
-    font-size: 36px;
-  }
-
-  .nav-inner {
     min-height: 68px;
   }
 
@@ -1097,18 +1057,60 @@ footer a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    margin-left: auto;
   }
 
   .site-nav ul {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 16px;
+    right: 16px;
+    flex-direction: column;
     gap: 0;
-    padding: 8px 0;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(22, 73, 59, 0.08);
+    border-radius: 18px;
+    box-shadow: 0 20px 50px rgba(17, 30, 26, 0.18), 0 4px 16px rgba(17, 30, 26, 0.08);
     overflow: hidden;
+    animation: menuIn 200ms ease;
+  }
+
+  @keyframes menuIn {
+    from { opacity: 0; transform: translateY(-8px) scale(0.98); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+  }
+
+  .site-nav.is-open ul {
+    display: flex;
   }
 
   .site-nav ul li a {
     display: block;
-    padding: 14px 20px;
+    padding: 13px 14px;
     font-size: 15px;
+    border-radius: 10px;
+    transition: background 150ms ease, color 150ms ease;
+  }
+
+  .site-nav ul li a:hover {
+    background: var(--sand);
+    color: var(--green-deep);
+  }
+
+  .site-nav ul li a[aria-current="page"] {
+    background: rgba(224, 162, 59, 0.14);
+    color: var(--green-deep);
+  }
+
+  .site-nav ul li a[aria-current="page"]::after {
+    display: none;
+  }
+
+  .btn-donate {
+    display: none;
   }
 
   /* Hero */
@@ -1157,6 +1159,76 @@ footer a {
     font-size: 26px;
   }
 
+  .pillars,
+  .stats,
+  .programs-grid,
+  .footer-grid,
+  .story-grid,
+  .panel-grid,
+  .three-col,
+  .page-image-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat {
+    padding-left: 16px;
+  }
+
+  .stat .num {
+    font-size: 36px;
+  }
+
+  .story {
+    padding: 48px 0;
+  }
+
+  .story-grid {
+    gap: 28px;
+  }
+
+  .story-grid img {
+    height: 280px;
+  }
+
+  .story-quote {
+    font-size: 21px;
+  }
+
+  .programs {
+    padding: 12px 0 56px;
+  }
+
+  .programs-grid {
+    gap: 18px;
+    margin-top: 28px;
+  }
+
+  .program-card {
+    height: 300px;
+  }
+
+  .page-hero {
+    min-height: 42vh;
+  }
+
+  .page-hero h1 {
+    font-size: 28px;
+    line-height: 1.15;
+  }
+
+  .page-hero .hero-content {
+    padding-bottom: 48px;
+  }
+
+  .page-section {
+    padding: 48px 0;
+  }
+
+  .info-card, .board-panel, .contact-card, .form-shell {
+    padding: 22px 20px;
+  }
+
   .footer-grid {
     gap: 32px;
   }
@@ -1165,12 +1237,10 @@ footer a {
     height: 36px;
   }
 
-  /* Omitted earlier generic grid collapse stays */
   .partner-row {
     gap: 18px 20px;
   }
 
-  /* Board featured — centered smaller cards */
   .board-list--featured {
     grid-template-columns: 1fr;
     justify-items: center;
@@ -1188,7 +1258,7 @@ footer a {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px)@media (max-width: 480px) {
   .hero h1 {
     font-size: 28px;
   }
