@@ -910,7 +910,7 @@ button:focus-visible {
   font-size: 0.95em;
 }
 
-/* Featured board — clean square cards, no panel */
+/* Featured board ï¿½ clean square cards, no panel */
 .board-list--featured {
   display: grid;
   grid-template-columns: repeat(2, 320px);
@@ -1121,7 +1121,42 @@ footer a {
   }
 
   .btn-donate {
-    display: none;
+    display: inline-flex;
+    align-items: center;
+    margin-left: auto;
+    padding: 9px 16px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .nav-toggle {
+    margin-left: 10px;
+  }
+
+  .site-nav ul li.mobile-donate {
+    border-bottom: 1px solid rgba(22, 73, 59, 0.08);
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+  }
+
+  .site-nav ul li.mobile-donate a {
+    display: block;
+    padding: 14px;
+    margin: 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    color: var(--green-darker);
+    background: var(--gold);
+    border: 1px solid var(--gold);
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(224, 162, 59, 0.3);
+  }
+
+  .site-nav ul li.mobile-donate a:hover {
+    background: #e8b44a;
+    color: var(--green-darker);
   }
 
   /* Hero */
@@ -1269,13 +1304,28 @@ footer a {
   }
 }
 
-@media (max-width: 480px)@media (max-width: 480px) {
+@media (max-width: 480px) {
   .hero h1 {
     font-size: 28px;
   }
 
   .page-hero h1 {
     font-size: 24px;
+  }
+
+  .logo {
+    width: 150px;
+    height: 42px;
+  }
+
+  .btn-donate {
+    padding: 8px 13px;
+    font-size: 12.5px;
+  }
+
+  .nav-toggle {
+    width: 40px;
+    height: 40px;
   }
 
   .hero p, .page-lead {
