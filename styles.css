@@ -281,6 +281,17 @@ button:focus-visible {
   border-radius: 999px;
 }
 
+.hero .eyebrow {
+  color: #fff;
+  background: rgba(15, 51, 42, 0.52);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 7px 14px;
+  border-radius: 999px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.22);
+}
+
 @keyframes heroIn {
   from { opacity: 0; transform: translateY(24px); }
   to { opacity: 1; transform: translateY(0); }
