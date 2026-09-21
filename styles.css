@@ -1598,6 +1598,8 @@ footer a:hover {
   padding: 6px 10px;
   margin-bottom: 2px;
 }
+.partner-logo--dark { background: #0f332a; border-color: #0f332a; }
+.profile-logo--dark { background: #0f332a; border-color: #0f332a; }
 .profile-logo {
   display: block;
   max-width: 280px;
