@@ -588,11 +588,20 @@ button:focus-visible {
 .story-grid img {
   width: 100%;
   height: auto;
-  aspect-ratio: 3 / 4;
   object-fit: cover;
   object-position: top center;
-  max-height: 600px;
+  max-height: 640px;
   border-radius: 6px;
+}
+
+/* Bio photographic heroes: portrait background, faces protected */
+.bio-hero { min-height: 60vh; }
+.bio-hero::after {
+  background: linear-gradient(180deg, rgba(15, 51, 42, 0.32) 0%, rgba(15, 51, 42, 0.88) 100%);
+}
+
+@media (max-width: 960px) {
+  .bio-hero { min-height: 46vh; }
 }
 
 .story-quote {
