@@ -377,6 +377,31 @@ button:focus-visible {
   color: #fff;
 }
 
+/* Solid WhatsApp CTA for use on light backgrounds */
+.btn-whatsapp {
+  background: #15924a;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  letter-spacing: 0.3px;
+  border: 1px solid #15924a;
+  box-shadow: 0 4px 14px rgba(21, 146, 74, 0.32);
+}
+.btn-whatsapp:hover {
+  background: #0f7339;
+  border-color: #0f7339;
+  color: #fff;
+  box-shadow: 0 6px 20px rgba(21, 146, 74, 0.4);
+}
+.btn-whatsapp .icon { width: 19px; height: 19px; flex: 0 0 19px; }
+
 .waveline {
   height: 64px;
   position: relative;
