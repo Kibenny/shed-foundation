@@ -49,6 +49,8 @@ const revealTargets = [
   '.section-title',
   '.story-grid > *',
   '.partner-card',
+  '.profile-block',
+  '.fact-card',
   '.panel-grid > *',
   '.three-col > *',
   '.footer-grid > *'
