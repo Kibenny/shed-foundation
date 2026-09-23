@@ -1743,6 +1743,11 @@ footer a:hover {
   padding: 14px 20px;
   margin: 0;
 }
+.page-hero .profile-logo--head {
+  position: static;
+  width: 250px;
+  height: 110px;
+}
 
 .tier-pill {
   display: inline-block;
