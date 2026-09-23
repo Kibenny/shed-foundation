@@ -1537,7 +1537,6 @@ footer a:hover {
   margin: 0 0 18px;
 }
 
-.page-hero--slim img { display: none; }
 .page-hero--slim { min-height: 0; padding: 64px 0 44px; background: #0f332a; }
 .page-hero--slim::after { display: none; }
 .page-hero--slim .hero-content { position: static; transform: none; padding-top: 0; padding-bottom: 0; }
