@@ -5,10 +5,7 @@
   "installCommand": null,
   "cleanUrls": true,
   "redirects": [
-    { "source": "/health", "destination": "/about#health", "permanent": true },
-    { "source": "/education", "destination": "/about#education", "permanent": true },
-    { "source": "/development", "destination": "/about#development", "permanent": true },
-    { "source": "/donate", "destination": "/contact#support", "permanent": true },
+    { "source": "/donate", "destination": "/get-involved", "permanent": true },
     { "source": "/images/partners/usaid.svg", "destination": "/images/partners/usaid.png", "permanent": true }
   ]
 }
