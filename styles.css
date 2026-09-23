@@ -1733,9 +1733,12 @@ footer a:hover {
 }
 .profile-logo--head {
   flex: 0 0 auto;
+  width: 250px;
+  height: 110px;
+  object-fit: contain;
+  object-position: center;
   max-width: 300px;
   max-height: 120px;
-  width: auto;
   background: #fff;
   border-radius: 16px;
   padding: 14px 20px;
