@@ -685,6 +685,13 @@ button:focus-visible {
   font-weight: 600;
 }
 
+.program-label p {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 14.5px;
+  line-height: 1.55;
+  margin: 8px 0 0;
+}
+
 .partners {
   padding: 60px 0;
   border-top: 1px solid rgba(22, 73, 59, 0.1);
@@ -1747,6 +1754,7 @@ footer a:hover {
   position: static;
   width: 250px;
   height: 110px;
+  object-fit: contain;
 }
 
 .tier-pill {
