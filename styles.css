@@ -1683,6 +1683,9 @@ footer a:hover {
 
 .contact-lines { line-height: 2.1; }
 .contact-lines a { display: inline-flex; align-items: center; gap: 9px; }
+.contact-socials { display: flex; gap: 14px; margin: 10px 0 14px; }
+.contact-socials a { display: inline-flex; color: #0f332a; }
+.contact-socials .icon { width: 22px; height: 22px; flex: 0 0 22px; }
 .support-ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 1.5rem; }
 
 .page-section[id] { scroll-margin-top: 90px; }
