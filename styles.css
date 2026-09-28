@@ -1670,6 +1670,9 @@ footer a:hover {
   font-size: 14.5px;
 }
 .highlights li::before { content: "— "; color: #7a8455; font-weight: 700; }
+.highlights.links-with-icons li::before { content: none; }
+.highlights.links-with-icons a { display: inline-flex; align-items: center; gap: 10px; }
+.highlights.links-with-icons .icon { width: 20px; height: 20px; flex: 0 0 20px; color: #0f332a; }
 
 @media (max-width: 960px) {
   .founder-portraits { grid-template-columns: repeat(2, 1fr); }
